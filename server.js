@@ -10,7 +10,7 @@ require('dotenv').config();
 //find public
 app.use(express.static('./public'));
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3001;
 
 // replaced by app.use ^^
 // app.get('/', function (req, res) {
